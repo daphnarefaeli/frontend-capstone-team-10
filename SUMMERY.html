@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Questionnaire Summary</title>
+
+  <!-- CSS (INTERNAL – למדנו שזה מותר) -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7f6;
+      color: #333;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background-color: white;
+      padding: 16px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e8f1f0;
+    }
+
+    .warning {
+      color: #b00020;
+      font-weight: bold;
+    }
+
+    .ok {
+      color: #2e7d32;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Your Mood Summary</h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Overall Status</h2>
+      <p id="status-text"></p>
+    </section>
+
+    <section>
+      <h2>Your Answers</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Your Answer</th>
+          </tr>
+        </thead>
+        <tbody id="answers-table">
+          <!-- JS will insert rows here -->
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- JavaScript (INTERNAL – למדנו שזה מותר) -->
+  <script>
+    // ===== Example data (בהמשך יבוא מהשאלון) =====
+    var questionnaireData = {
+      answers: [
+        { question: "I feel calm today", score: 4 },
+        { question: "I slept well", score: 3 },
+        { question: "I feel motivated", score: 2 }
+      ]
+    };
+
+    var tableBody = document.getElementById("answers-table");
+    var statusText = document.getElementById("status-text");
+
+    var totalScore = 0;
+
+    for (var i = 0; i < questionnaireData.answers.length; i++) {
+      var row = document.createElement("tr");
+
+      var questionCell = document.createElement("td");
+      questionCell.innerHTML = questionnaireData.answers[i].question;
+
+      var answerCell = document.createElement("td");
+      answerCell.innerHTML = questionnaireData.answers[i].score;
+
+      row.appendChild(questionCell);
+      row.appendChild(answerCell);
+      tableBody.appendChild(row);
+
+      totalScore += questionnaireData.answers[i].score;
+    }
+
+    var average = totalScore / questionnaireData.answers.length;
+
+    if (average >= 3) {
+      statusText.innerHTML = "Your emotional state seems stable 🙂";
+      statusText.className = "ok";
+    } else {
+      statusText.innerHTML = "You may be experiencing a difficult period ⚠️";
+      statusText.className = "warning";
+    }
+  </script>
+
+</body>
+</html>
