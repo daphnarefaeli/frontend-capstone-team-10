@@ -1,0 +1,225 @@
+* {
+    font-family:sans-serif !important;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(pictures/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 80vh; 
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);  
+    position: sticky; 
+    top: 0;
+    backdrop-filter: blur(12px);
+    height: 90px; 
+    z-index: 1000;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 40px; 
+    margin: 0 auto; 
+}
+
+#header-logo {
+    order: 2;
+    width: 65px; 
+    height: auto;
+    object-fit: contain;
+}
+
+.bar-button {
+    order: 1;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-decoration: none;
+    color: black; 
+    font-size: medium;
+    gap: 8px; 
+    transition: transform 0.2s, color 0.2s;
+}
+
+.bar-button:hover {
+    color: #0a5db6; 
+    transform: translateY(-2px); 
+}
+
+.bar-icon {
+    width: 25px; 
+    height: 25px;
+}
+
+@media (max-width: 1024px) {
+    .menu-bar { gap: 30px; }
+}
+
+@media (max-width: 768px) {
+    .menu-bar { gap: 20px; }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; 
+        height: auto;
+        padding: 15px;
+    }
+
+    #header-logo {
+        position: static;
+        margin: 0 auto 10px auto;
+        order: -1;
+        width: 50px;
+    }
+
+    .menu-bar {
+        gap: 15px;
+        flex-direction: row-reverse; 
+        align-items: center;
+    }
+
+    .bar-button { font-size: 14px; 
+    }
+
+}
+
+/* -------------------------------------------------------------------------------- */
+.container_home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    padding: 30px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    position: relative;
+    text-decoration: none;
+    border-radius: 15px;
+    overflow: hidden;
+    display: block; 
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.small-item {
+    height: 110px;
+}
+
+.wide-item {
+    grid-column: span 4;
+    height: 80px;
+}
+
+.grid-item:hover {
+    transform: scale(1.02);
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(97, 94, 94, 0.3); 
+    padding: 10px;
+}
+
+.overlay p {
+    color: white;
+    font-weight: 550;
+    margin: 0;
+    text-align: right;
+    font-size: 14px;
+    text-shadow: 2px 1px 4px rgba(0,0,0,0.7);
+}
+
+@media (max-width: 480px) {
+    .container_home {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .wide-item {
+        grid-column: span 2; 
+        height: 60px;
+    }
+    .small-item {
+        height: 90px;
+    }
+}
+
+.form-page-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    min-height: calc(100vh - 90px); 
+    padding: 20px;
+}
+
+.registration-card {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    max-width: 450px; /* רוחב הטופס */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+.registration-btn {
+    width: 50%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #0a5db6; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(10, 93, 182, 0.2);
+}
+
+.registration-btn:hover {
+    background-color: #084a91;
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 20px rgba(10, 93, 182, 0.3);
+}
+
+.registration-btn:active {
+    transform: translateY(0);
+}

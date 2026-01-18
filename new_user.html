@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <title>new_user</title>
+</head>
+<body>
+
+ <header class="header">
+
+      <nav class="menu-bar">
+
+        <img id="header-logo" src="./pictures/logo-transperent.png" alt="logo" />
+
+        <a href="" class="bar-button">
+          <img src="pictures/phone-call.png" alt="contact-us" class="bar-icon" /> צרו קשר
+        </a>
+
+        <a href="" class="bar-button"> <img src="pictures/contact-form.png" alt="survey" class="bar-icon"  /> מילוי השאלון היומי
+        </a>
+
+        <a href="new_user.html" class="bar-button">
+          <img src="pictures/application.png" alt="new-customer" class="bar-icon" /> הרשמת משתמש חדש
+        </a>
+
+        <a href="homepage.html" class="bar-button"
+          ><img src="pictures/home.png" alt="home-page" class="bar-icon" /> לדף הבית
+        </a>
+
+      </nav>
+
+    </header>
+
+
+    <main class="form-page-container">
+        <div class="registration-card">
+            <h2>הרשמת משתמש חדש</h2>
+            <p>הצטרפו לקהילה</p>
+            
+            <form id="registrationForm">
+              <input type="text" id="firstName" class="form-control" placeholder="שם פרטי" required>
+              <input type="text" id="lastName" class="form-control" placeholder="שם משפחה" required>
+              <input type="email" id="email" class="form-control" placeholder="אימייל" required>
+              <input type="password" id="password" class="form-control" placeholder="סיסמה" required>
+                
+                <button type="submit" class="registration-btn" >הרשמה</button>
+            </form>
+
+            <div style="margin-top: 20px;">
+                <a href="homepage.html" style="text-decoration: none; color: #0056b3; font-size: 14px;"> ← חזרה לדף הבית </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
