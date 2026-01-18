@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url(./background\ pic.jpeg); /* <-- כאן שימי את התמונה */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.summary-page {
+  max-width: 420px;
+  margin: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 1.6rem;
+}
+
+/* כרטיסים */
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* גרף */
+.chart-placeholder {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* תובנה */
+.insight {
+  text-align: center;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* התרעה */
+.alert-card {
+  background: rgba(245, 248, 250, 0.95);
+}
+
+.alert-content {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: #374151;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.alert-icon {
+  font-size: 1.2rem;
+}
+
+.support-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #4fa3a5, #4f8fc0);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
