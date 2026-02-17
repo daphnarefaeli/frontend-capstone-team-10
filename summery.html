@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he" >
+<head>
+  <meta charset="UTF-8">
+  <title>Summary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="menu-bar">
+      <img id="header-logo" src="./pictures/logo-transperent.png" alt="logo" />
+
+      <a href="#" class="bar-button">
+        <img src="pictures/phone-call.png" alt="contact-us" class="bar-icon" /> צרו קשר
+      </a>
+
+      <a href="#" class="bar-button">
+        <img src="pictures/contact-form.png" alt="survey" class="bar-icon" /> מילוי השאלון היומי
+      </a>
+
+      <a href="new_user.html" class="bar-button">
+        <img src="pictures/application.png" alt="new-customer" class="bar-icon" /> הרשמת משתמש חדש
+      </a>
+
+      <a href="homepage.html" class="bar-button">
+        <img src="pictures/home.png" alt="home-page" class="bar-icon" /> לדף הבית
+      </a>
+    </nav>
+  </header>
+
+    <main class="summery-page">
+      <h1>סיכום יומי ביחס לשאלון שלך</h1>
+      <section class="card chart-card">
+            <h2>מצב נוכחי</h2>
+        <canvas id="currentChart" width="900" height="320" style="width:100%; height:auto;"></canvas>
+        </section>
+
+        <section class="card insight-card">
+  <p class="insight" id="insight-text"></p>
+        </section>
+
+
+
+    </main>
+   <script src="script.js"></script>
+  </body>
+</html>
