@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css"/>
-    <title>new_user</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css"> 
 </head>
 <body>
-
+  
  <header class="header">
 
       <nav class="menu-bar">
@@ -40,29 +40,20 @@
 
       </nav>
 
-  </header>
+    </header>
 
     <main class="form-page-container">
         <div class="registration-card">
-            <h2>הרשמת משתמש חדש</h2>
-            <p>הצטרפו לקהילה</p>
-            
-            <form id="registrationForm">
-              <input type="text" id="firstName" class="form-control" placeholder="שם פרטי" required>
-              <input type="text" id="lastName" class="form-control" placeholder="שם משפחה" required>
-              <input type="email" id="email" class="form-control" placeholder="אימייל" required>
-              <input type="password" id="password" class="form-control" placeholder="סיסמה" required>
-
-              <button type="submit" class="registration-btn" >הרשמה</button>
-              
-            </form>
-
-            <div style="margin-top: 20px;">
-                <a href="homepage.html" style="text-decoration: none; color: #0056b3; font-size: 14px;"> ← חזרה לדף הבית </a>
+            <h2>הפרופיל שלי</h2>
+            <div id="profileDetails">
+                <p><strong>:שם פרטי</strong> <span id="displayFirstName"></span></p>
+                <p><strong>:שם משפחה</strong> <span id="displayLastName"></span></p>
+                <p><strong>:אימייל</strong> <span id="displayEmail"></span></p>
             </div>
+            <button onclick="window.location.href='homepage.html'" class="registration-btn" style="margin-top: 20px;">חזרה לדף הבית</button>
         </div>
     </main>
-
+    
     <script src="script.js"></script>
 </body>
 </html>

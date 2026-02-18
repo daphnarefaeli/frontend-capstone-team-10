@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+
+</head>
+<body>
+ <header class="header">
+
+      <nav class="menu-bar">
+
+        <img id="header-logo" src="./pictures/logo-transperent.png" alt="logo" />
+
+
+        <div class="account-dropdown">
+           <button type="button" class="bar-button" id="accountBtn">
+            <img src="pictures/dropdown-bar.png" alt="account" class="bar-icon" />
+            <span>חשבון</span>
+           </button>
+           <div class="dropdown-content" id="accountMenu">
+             <a href="new_user.html" id="menuRegister">הרשמת משתמש חדש</a>
+             <a href="profile.html" id="menuProfile" style="display: none;">פרופיל אישי</a>
+             <a href="#" id="menuLogout" style="display: none;">התנתקות</a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="bar-button">
+          <img src="pictures/phone-call.png" alt="contact-us" class="bar-icon" /> צרו קשר
+        </a>
+
+        <a href="" class="bar-button"> <img src="pictures/contact-form.png" alt="survey" class="bar-icon"  /> מילוי השאלון היומי
+        </a>
+
+        <a href="homepage.html" class="bar-button"
+          ><img src="pictures/home.png" alt="home-page" class="bar-icon" /> לדף הבית
+        </a>
+
+      </nav>
+
+    </header>
+
+<main class="contact-container">
+    <h1 class="page-title">הכירו את הצוות</h1>
+    
+    <div class="team-grid">
+
+        <div class="team-card">
+            <img src="pictures/lela.png" alt="דפנה" class="member-img">
+            <h3>דפנה רפאלי</h3>
+            <p>פיתוח</p>
+            <a href="mailto:lelaref00@gmail.com" class="contact-link">lelaref00@gmail.com</a>
+        </div>
+
+        <div class="team-card">
+            <img src="pictures/neta.png" alt="נטע" class="member-img">
+            <h3>נטע גל</h3>
+            <p>פיתוח</p>
+            <a href="mailto:neta21000@gmail.com" class="contact-link">neta21000@gmail.com</a>
+        </div>
+
+        <div class="team-card">
+            <img src="pictures/eldad.png" alt="אלדד" class="member-img">
+            <h3>אלדד חדד</h3>
+            <p>ניהול פרויקט</p>
+            <a href="mailto:eldadhadad300@gmail.com" class="contact-link">eldadhadad300@gmail.com</a>
+        </div>
+
+    </div> <div class="registration-card" style="margin: 50px auto; max-width: 600px;">
+        <h3>שלחו לנו הודעה</h3>
+        <form id="contactForm">
+            <input type="text" id="contactName" class="form-control" placeholder="השם שלך" required>
+            <input type="email" id="contactEmail" class="form-control" placeholder="אימייל לחזרה" required>
+            <textarea id="contactMessage" class="form-control" placeholder="מה תרצו להגיד לנו?" style="height: 120px; padding-top: 10px;"></textarea>
+            <button type="submit" class="registration-btn" style="width: 100%;">שליחת הודעה</button>
+        </form>
+    </div>
+
+    <div style="width: 100%; text-align: center; margin-bottom: 50px;">
+        <button onclick="window.location.href='homepage.html'" class="registration-btn" style="background-color: #555;">חזרה לדף הבית</button>
+    </div>
+</main>
+    
+    
+</body>
+</html>
