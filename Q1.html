@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+</head>
+
+<body>
+   <header class="header">
+
+      <nav class="menu-bar">
+
+        <img id="header-logo" src="./pictures/logo-transperent.png" alt="logo" />
+
+
+        <div class="account-dropdown">
+           <button type="button" class="bar-button" id="accountBtn">
+            <img src="pictures/dropdown-bar.png" alt="account" class="bar-icon" />
+            <span>חשבון</span>
+           </button>
+           <div class="dropdown-content" id="accountMenu">
+             <a href="new_user.html" id="menuRegister">הרשמת משתמש חדש</a>
+             <a href="profile.html" id="menuProfile" style="display: none;">פרופיל אישי</a>
+             <a href="#" id="menuLogout" style="display: none;">התנתקות</a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="bar-button">
+          <img src="pictures/phone-call.png" alt="contact-us" class="bar-icon" /> צרו קשר
+        </a>
+
+        <a href="" class="bar-button"> <img src="pictures/contact-form.png" alt="survey" class="bar-icon"  /> מילוי השאלון היומי
+        </a>
+
+        <a href="homepage.html" class="bar-button"
+          ><img src="pictures/home.png" alt="home-page" class="bar-icon" /> לדף הבית
+        </a>
+
+      </nav>
+
+    </header>
+    <main class="app">
+        <h1 class="servey">דרג את מצב הרוח שלך היום</h1>
+
+        <div class="slider">
+            
+            <input type="range"
+            id="mood-slider1"
+             min="0"
+             max="10"
+             value="5"
+             step="1"
+             list="range-labels"
+             aria-label="מצב רגשי יומי">
+
+             <datalist id="range-labels">
+                <option value="2" label="2"></option>
+                <option value="4" label="4"></option>
+                <option value="6" label="6"></option>
+                <option value="8" label="8"></option>
+                <option value="10"label="10"></option>
+             </datalist>
+
+             <div class="range-numbers">
+                <span>קשה לי</span>
+                <span>2</span>
+                <span>4</span>
+                <span>6</span>
+                <span>8</span>
+                <span>מצויין</span>
+             </div>
+        
+        </div>
+         <div class="buttons">  
+            <div class="back button">
+             <button>חזור</button>
+            </div>
+             <div class="forword button">
+               <button type="button" onclick="saveSliderAndGo(1, 'Q2.html')">המשך</button>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

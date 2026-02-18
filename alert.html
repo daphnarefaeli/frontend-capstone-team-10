@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+</head>
+
+<body>
+
+    <header class="header">
+      <nav class="menu-bar">
+        <img id="header-logo" src="./pictures/logo-transperent.png" alt="logo" />
+        <div class="account-dropdown">
+           <button type="button" class="bar-button" id="accountBtn">
+            <img src="pictures/dropdown-bar.png" alt="account" class="bar-icon" />
+            <span>חשבון</span>
+           </button>
+           <div class="dropdown-content" id="accountMenu">
+             <a href="new_user.html" id="menuRegister">הרשמת משתמש חדש</a>
+             <a href="profile.html" id="menuProfile" style="display: none;">פרופיל אישי</a>
+             <a href="#" id="menuLogout" style="display: none;">התנתקות</a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="bar-button">
+          <img src="pictures/phone-call.png" alt="contact-us" class="bar-icon" /> צרו קשר
+        </a>
+
+        <a href="" class="bar-button"> <img src="pictures/contact-form.png" alt="survey" class="bar-icon"  /> מילוי השאלון היומי
+        </a>
+
+        <a href="homepage.html" class="bar-button"
+          ><img src="pictures/home.png" alt="home-page" class="bar-icon" /> לדף הבית
+        </a>
+
+      </nav>
+
+    </header>
+    <main class="summary-page">
+        <section class="card alert-card">
+            <div class="alert-content">
+                <span class="alert-icon">⚠️</span>
+                <div>
+                    <h3>שמנו לב לירידה במדדים שלך</h3>
+                    <p>זה בסדר לא להיות בטוב. הכנו עבורך כמה אפשרויות לסיוע מיידי:</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="card" style="margin-bottom: 15px;">
+            <h3>תמיכה מקצועית</h3>
+            <p>שיחה אנונימית עם מוקד ער"ן</p>
+            <button class="support-btn" onclick="window.location.href='tel:1201'">חיוג למוקד 1201</button>
+            <p class="desktop-only-info" style="font-size: 0.9rem; margin-top: 10px; color: #666;"> מחייגים ממחשב? המספר הוא: <strong>1201</strong> </p>
+        </div>
+
+        <div class="card" style="margin-bottom: 15px;">
+            <h3>תרגול מהיר</h3>
+            <p>5 דקות של נשימות מודרכות להפחתת מתח</p>
+             <button class="support-btn" onclick="location.href='building_page.html'">התחל תרגול</button>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
