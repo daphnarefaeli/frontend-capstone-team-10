@@ -14,15 +14,24 @@
 
         <img id="header-logo" src="./pictures/logo-transperent.png" alt="logo" />
 
-        <a href="" class="bar-button">
+
+        <div class="account-dropdown">
+           <button type="button" class="bar-button" id="accountBtn">
+            <img src="pictures/dropdown-bar.png" alt="account" class="bar-icon" />
+            <span>חשבון</span>
+           </button>
+           <div class="dropdown-content" id="accountMenu">
+             <a href="new_user.html" id="menuRegister">הרשמת משתמש חדש</a>
+             <a href="profile.html" id="menuProfile" style="display: none;">פרופיל אישי</a>
+             <a href="#" id="menuLogout" style="display: none;">התנתקות</a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="bar-button">
           <img src="pictures/phone-call.png" alt="contact-us" class="bar-icon" /> צרו קשר
         </a>
 
         <a href="" class="bar-button"> <img src="pictures/contact-form.png" alt="survey" class="bar-icon"  /> מילוי השאלון היומי
-        </a>
-
-        <a href="new_user.html" class="bar-button">
-          <img src="pictures/application.png" alt="new-customer" class="bar-icon" /> הרשמת משתמש חדש
         </a>
 
         <a href="homepage.html" class="bar-button"
@@ -31,8 +40,7 @@
 
       </nav>
 
-    </header>
-
+  </header>
 
     <main class="form-page-container">
         <div class="registration-card">
@@ -44,8 +52,9 @@
               <input type="text" id="lastName" class="form-control" placeholder="שם משפחה" required>
               <input type="email" id="email" class="form-control" placeholder="אימייל" required>
               <input type="password" id="password" class="form-control" placeholder="סיסמה" required>
-                
-                <button type="submit" class="registration-btn" >הרשמה</button>
+
+              <button type="submit" class="registration-btn" >הרשמה</button>
+              
             </form>
 
             <div style="margin-top: 20px;">

@@ -11,21 +11,30 @@
 
 </head>
 <body >
-    <header class="header">
+   <header class="header">
 
       <nav class="menu-bar">
 
         <img id="header-logo" src="./pictures/logo-transperent.png" alt="logo" />
 
-        <a href="" class="bar-button">
+
+        <div class="account-dropdown">
+           <button type="button" class="bar-button" id="accountBtn">
+            <img src="pictures/dropdown-bar.png" alt="account" class="bar-icon" />
+            <span>חשבון</span>
+           </button>
+           <div class="dropdown-content" id="accountMenu">
+             <a href="new_user.html" id="menuRegister">הרשמת משתמש חדש</a>
+             <a href="profile.html" id="menuProfile" style="display: none;">פרופיל אישי</a>
+             <a href="#" id="menuLogout" style="display: none;">התנתקות</a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="bar-button">
           <img src="pictures/phone-call.png" alt="contact-us" class="bar-icon" /> צרו קשר
         </a>
 
         <a href="" class="bar-button"> <img src="pictures/contact-form.png" alt="survey" class="bar-icon"  /> מילוי השאלון היומי
-        </a>
-
-        <a href="new_user.html" class="bar-button">
-          <img src="pictures/application.png" alt="new-customer" class="bar-icon" /> הרשמת משתמש חדש
         </a>
 
         <a href="homepage.html" class="bar-button"
@@ -47,21 +56,21 @@
         </div>
     </a>
 
-    <a href="survey.html" class="grid-item small-item">
+    <a href="Q1.html" class="grid-item small-item">
         <img src="pictures/box-back2.png" class="bg-img">
         <div class="overlay">
             <p>מילוי שאלון יומי</p>
         </div>
     </a>
 
-    <a href="positive.html" class="grid-item small-item">
+    <a href="buil" class="grid-item small-item">
         <img src="pictures/box-back1.png" class="bg-img">
         <div class="overlay">
             <p>תרגול חשיבה חיובית</p>
         </div>
     </a>
 
-    <a href="tips.html" class="grid-item small-item">
+    <a href="building_page.html" class="grid-item small-item">
         <img src="pictures/box-back2.png" class="bg-img">
         <div class="overlay">
             <p>טיפים לנפש</p>
@@ -82,7 +91,7 @@
         </div>
     </a>
 
-    <a href="stats.html" class="grid-item wide-item">
+    <a href="summary_page.html" class="grid-item wide-item">
         <img src="pictures/largebox_statistic.png" class="bg-img">
         <div class="overlay">
             <p>נתונים אישיים וסטטיסטיקה</p>

@@ -1,17 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alert</title>
+    <title>Q3</title>
     <link rel="stylesheet" href="stylesheet.css"/>
 </head>
 
 <body>
-
     <header class="header">
+
       <nav class="menu-bar">
+
         <img id="header-logo" src="./pictures/logo-transperent.png" alt="logo" />
+
+
         <div class="account-dropdown">
            <button type="button" class="bar-button" id="accountBtn">
             <img src="pictures/dropdown-bar.png" alt="account" class="bar-icon" />
@@ -38,31 +42,46 @@
       </nav>
 
     </header>
-    <main class="summary-page">
-        <section class="card alert-card">
-            <div class="alert-content">
-                <span class="alert-icon">⚠️</span>
-                <div>
-                    <h3>שמנו לב לירידה במדדים שלך</h3>
-                    <p>זה בסדר לא להיות בטוב. הכנו עבורך כמה אפשרויות לסיוע מיידי:</p>
+
+    <main class="app">
+        <h1 class="servey">דרג את רמת המתח שחשת היום</h1>
+
+             <div class="slider">
+                <input type="range"
+                id="mood-slider3"
+                min="0"
+                max="10"
+                value="5"
+                step="1"
+                list="range-labels"
+                aria-label="מצב רגשי יומי">
+
+                <datalist id="range-labels">
+                    <option value="2" label="2"></option>
+                    <option value="4" label="4"></option>
+                    <option value="6" label="6"></option>
+                    <option value="8" label="8"></option>
+                    <option value="10"label="10"></option>
+                </datalist>
+
+                <div class="range-numbers">
+                    <span>קשה לי</span>
+                    <span>2</span>
+                    <span>4</span>
+                    <span>6</span>
+                    <span>8</span>
+                    <span>מצויין</span>
                 </div>
+            </div> 
+         <div class="buttons">
+            <div class="back button">
+             <button type="button" onclick="location.href='Q2.html'">חזור</button>
             </div>
-        </section>
+            <div class="forword button">
+              <button type="button" onclick="saveSliderAndGo(3, 'Q4.html')">המשך</button>
+            </div>
+         </div>
 
-        <div class="card" style="margin-bottom: 15px;">
-            <h3>תמיכה מקצועית</h3>
-            <p>שיחה אנונימית עם מוקד ער"ן</p>
-            <button class="support-btn" onclick="window.location.href='tel:1201'">חיוג למוקד 1201</button>
-            <p class="desktop-only-info" style="font-size: 0.9rem; margin-top: 10px; color: #666;"> מחייגים ממחשב? המספר הוא: <strong>1201</strong> </p>
-        </div>
-
-        <div class="card" style="margin-bottom: 15px;">
-            <h3>תרגול מהיר</h3>
-            <p>5 דקות של נשימות מודרכות להפחתת מתח</p>
-             <button class="support-btn" onclick="location.href='building_page.html'">התחל תרגול</button>
-        </div>
-    </main>
-    
-    <script src="script.js"></script>
+     <script src="script.js"></script>
 </body>
-</html>
+</html

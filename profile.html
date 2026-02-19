@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alert</title>
-    <link rel="stylesheet" href="stylesheet.css"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css"> 
 </head>
-
 <body>
+  
+ <header class="header">
 
-    <header class="header">
       <nav class="menu-bar">
+
         <img id="header-logo" src="./pictures/logo-transperent.png" alt="logo" />
+
+
         <div class="account-dropdown">
            <button type="button" class="bar-button" id="accountBtn">
             <img src="pictures/dropdown-bar.png" alt="account" class="bar-icon" />
@@ -38,28 +41,16 @@
       </nav>
 
     </header>
-    <main class="summary-page">
-        <section class="card alert-card">
-            <div class="alert-content">
-                <span class="alert-icon">⚠️</span>
-                <div>
-                    <h3>שמנו לב לירידה במדדים שלך</h3>
-                    <p>זה בסדר לא להיות בטוב. הכנו עבורך כמה אפשרויות לסיוע מיידי:</p>
-                </div>
+
+    <main class="form-page-container">
+        <div class="registration-card">
+            <h2>הפרופיל שלי</h2>
+            <div id="profileDetails">
+                <p><strong>:שם פרטי</strong> <span id="displayFirstName"></span></p>
+                <p><strong>:שם משפחה</strong> <span id="displayLastName"></span></p>
+                <p><strong>:אימייל</strong> <span id="displayEmail"></span></p>
             </div>
-        </section>
-
-        <div class="card" style="margin-bottom: 15px;">
-            <h3>תמיכה מקצועית</h3>
-            <p>שיחה אנונימית עם מוקד ער"ן</p>
-            <button class="support-btn" onclick="window.location.href='tel:1201'">חיוג למוקד 1201</button>
-            <p class="desktop-only-info" style="font-size: 0.9rem; margin-top: 10px; color: #666;"> מחייגים ממחשב? המספר הוא: <strong>1201</strong> </p>
-        </div>
-
-        <div class="card" style="margin-bottom: 15px;">
-            <h3>תרגול מהיר</h3>
-            <p>5 דקות של נשימות מודרכות להפחתת מתח</p>
-             <button class="support-btn" onclick="location.href='building_page.html'">התחל תרגול</button>
+            <button onclick="window.location.href='homepage.html'" class="registration-btn" style="margin-top: 20px;">חזרה לדף הבית</button>
         </div>
     </main>
     

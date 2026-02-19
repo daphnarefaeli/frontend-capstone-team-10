@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alert</title>
+    <title>summary_page</title>
     <link rel="stylesheet" href="stylesheet.css"/>
 </head>
 
 <body>
-
     <header class="header">
+
       <nav class="menu-bar">
+
         <img id="header-logo" src="./pictures/logo-transperent.png" alt="logo" />
+
+
         <div class="account-dropdown">
            <button type="button" class="bar-button" id="accountBtn">
             <img src="pictures/dropdown-bar.png" alt="account" class="bar-icon" />
@@ -38,31 +41,26 @@
       </nav>
 
     </header>
-    <main class="summary-page">
-        <section class="card alert-card">
-            <div class="alert-content">
-                <span class="alert-icon">⚠️</span>
-                <div>
-                    <h3>שמנו לב לירידה במדדים שלך</h3>
-                    <p>זה בסדר לא להיות בטוב. הכנו עבורך כמה אפשרויות לסיוע מיידי:</p>
-                </div>
-            </div>
-        </section>
 
-        <div class="card" style="margin-bottom: 15px;">
-            <h3>תמיכה מקצועית</h3>
-            <p>שיחה אנונימית עם מוקד ער"ן</p>
-            <button class="support-btn" onclick="window.location.href='tel:1201'">חיוג למוקד 1201</button>
-            <p class="desktop-only-info" style="font-size: 0.9rem; margin-top: 10px; color: #666;"> מחייגים ממחשב? המספר הוא: <strong>1201</strong> </p>
+    <main class="summary_page">
+    <h1>סיכום יומי ביחס לשאלון שלך</h1>
+    <section class="card chart-card">
+        <h3>מצב נוכחי</h3>
+        <div class="chart-container">
+            <canvas id="currentChart"></canvas>
         </div>
+    </section>
 
-        <div class="card" style="margin-bottom: 15px;">
-            <h3>תרגול מהיר</h3>
-            <p>5 דקות של נשימות מודרכות להפחתת מתח</p>
-             <button class="support-btn" onclick="location.href='building_page.html'">התחל תרגול</button>
-        </div>
-    </main>
-    
-    <script src="script.js"></script>
-</body>
+    <section class="card insight-card">
+        <p class="insight" id="insight-text"></p>
+    </section>
+<div class="buttons" style="margin-top: 40px;">
+        <button onclick = "location.href='homepage.html'">לדף הבית</button>
+    </div>
+
+</main>
+
+   <script src="script.js"></script>
+
+  </body>
 </html>
